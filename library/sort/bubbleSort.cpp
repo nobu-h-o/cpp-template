@@ -9,7 +9,7 @@ using namespace std;
 using ll = long long;
 constexpr ll mod = 1e9 + 7;
 
-int bubbleSort(int a[], int n) {
+int bubbleSort(vector<int> a, int n) {
     int sw = 0;
     bool flag = true;
     for(int i=0;flag; i++) {
@@ -22,5 +22,5 @@ int bubbleSort(int a[], int n) {
             }
         }
     }
-    return sw;
+    return sw; // returns the number of swaps needed for the bubble sort
 }
