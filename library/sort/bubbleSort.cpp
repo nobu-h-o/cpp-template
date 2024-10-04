@@ -1,3 +1,8 @@
+//
+// Created by nobuh on 10/4/2024.
+//
+
+#include "bubbleSort.h"
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -18,24 +23,4 @@ int bubbleSort(int a[], int n) {
         }
     }
     return sw;
-}
-
-int main() {
-    cin.tie(nullptr);
-    ios::sync_with_stdio(false);
-
-    int n;cin>>n;
-    int sw, a[n];
-
-    for(int i=0;i<n;i++) cin>>a[i];
-    sw = bubbleSort(a,n);
-
-    for(int i=0;i<n;i++) {
-        if (i) cout << " ";
-        cout<<a[i];
-    }
-    cout<<endl;
-    cout<<sw<<endl;
-
-    return 0;
 }
